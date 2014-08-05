@@ -1,0 +1,17 @@
+# Adding css files for your app is easy, just set them like this:
+#
+#   - src:  "mycss"
+#
+# If the font file is stored in static/fonts, if css loading is from a composer package you set like this:
+#
+#   - src:  "mycssfromcomposer"
+#     package: "css-vendor/vendor-pkg"
+#
+# Or if the font will be loaded from other URL:
+#
+#   - src:  "//mycdn.myhost.com/css/cssfile.min.css"
+#     remote: true
+#
+# Thats it :)
+
+- src: "styles"
