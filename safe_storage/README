@@ -1,8 +1,0 @@
-MVC-ExEngine Safe Storage
--------------------------
-
-This location must no be accessible thru a web browser,
-an included .htaccess file will not access but will
-only work in an Apache2 based installation, if
-you use Nginx, WSi or any other webserver you must be sure
-to disable script execution and browsing in this folder.
