@@ -1,0 +1,18 @@
+# Locale files are stored in config/locales directory and are automatically loaded by
+# MVC-ExEngine, you can set the application default in the eemvc.php file in config
+# by adding the following in the ApplicationInit function: $this->DefaultLocale = 'en';
+# then you can use in any controller with `I18n->t`:
+#
+#   $this->I18n->t('hello');
+#
+# or in any view:
+#
+#   <?=$I18n->t('hello')?>
+#
+# you can set any locale file in runtime by setting
+#
+#   $this->I18n->changeLocale('es');
+#
+# This will use data from the es.yml file.
+
+Hello World: "Hello World English"

@@ -1,0 +1,13 @@
+MVC-ExEngine
+
+First steps to start a new MVC application
+
+1. Set Correctly the ExEngine paths in the config/exengine.php file (just the http_path is necessary almost all the times).
+2. Create a controller manually (in the app/controllers folder) or using mvctool:
+	- On Linux/OS X/Unix (bash-based):
+		source ./bin/mvc
+		mvctool -g controller start
+	- On Windows (PHP binary must be on the Path environment variable):
+		bin\mvc
+		mvctool -g controller start
+3. Test your installation, http://localhost/
