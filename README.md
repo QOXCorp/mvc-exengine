@@ -9,7 +9,7 @@ You still need to clone ExEngine in order to use this files.
 Install steps:
 
 1. git clone https://github.com/QOXCorp/mvc-exengine.git ./mymvcapp
-2. cd lib/
+2. cd mymvcapp/lib/
 3. git clone https://github.com/QOXCorp/exengine.git
 
 4. Profit!.
