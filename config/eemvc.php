@@ -6,7 +6,7 @@
 
 namespace ExEngine\MVC;
 
-Class ApplicationConfig extends DefaultApplicationConfig {
+class ApplicationConfig extends DefaultApplicationConfig {
 
     function ApplicationInit() {
 
@@ -16,11 +16,15 @@ Class ApplicationConfig extends DefaultApplicationConfig {
         $this->SessionCfg = $S;
         */
 
+		/* Set ExEngine's Application Name, required for ExEngine's Storage
+		$this->ExEngineApplicationName = 'proyxvideoteca';
+		*/
+
         /* Enable Composer AutoLoad and Detection of some Web UI Frameworks
         $this->ComposerAutoload = true;
         */
 
-        /* Enable ExEngine DevGuard
+        /* Enable ExEngine DevGuard (must be enabled also in `exengine.php`)
         $this->DevGuard = false;
         $this->DevGuardKey = '';
         */
@@ -31,13 +35,13 @@ Class ApplicationConfig extends DefaultApplicationConfig {
 
 		/* You can enable rewrite rules support (not enabled by default)
 		$this->RewriteRulesEnabled = true;
-		$this->RewriteBaseFolder = 'billy'; // Set this if your app is not in the root of the domain (ex. //localhost/myapp)
+		$this->RewriteBaseFolder = 'myapp'; // Set this if your app is not in the root of the domain (ex. //localhost/myapp)
 		*/
 
-        /*
-        You can include your own includes here:
-        ex. include_once ('lib/mylib/mylib.php');
-        */
+		/*
+		You can include your own includes here:
+		ex. include_once ('lib/mylib/mylib.php');
+		*/
 
     }
 }
