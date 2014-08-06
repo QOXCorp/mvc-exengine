@@ -10,7 +10,7 @@ ini_set("display_errors", 1);
 
 include_once( 'config/exengine.php' );
 include_once( 'lib/exengine/ee.php' );
-$ee = new \ExEngine\Core(["SpecialMode" => "MVCOnly"], $ee_config);
+$ee = new \ExEngine\Core(["SpecialMode" => "MVCOnly","AutoSession" => false], $ee_config);
 include_once( 'config/eemvc.php' );
 
 $mvc = new \ExEngine\MVC\Index(new \ExEngine\MVC\ApplicationConfig());
