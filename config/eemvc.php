@@ -8,29 +8,29 @@ namespace ExEngine\MVC;
 
 class ApplicationConfig extends DefaultApplicationConfig {
 
-    function ApplicationInit() {
+	function ApplicationInit() {
 
-        /* This will enable the session support, not enabled by default (DevGuard requires Session Support)
-        $S = new Session();
-        $S->Enabled = true;
-        $this->SessionCfg = $S;
-        */
+		/* This will enable the session support, not enabled by default (DevGuard requires Session Support)
+		$S = new Session();
+		$S->Enabled = true;
+		$this->SessionCfg = $S;
+		*/
 
 		/* Set ExEngine's Application Name, required for ExEngine's Storage
 		$this->ExEngineApplicationName = 'proyxvideoteca';
 		*/
 
-        /* Enable Composer AutoLoad and Detection of some Web UI Frameworks
-        $this->ComposerAutoload = true;
-        */
+		/* Enable Composer AutoLoad and Detection of some Web UI Frameworks
+		$this->ComposerAutoload = true;
+		*/
 
-        /* Enable ExEngine DevGuard (must be enabled also in `exengine.php`)
-        $this->DevGuard = false;
-        $this->DevGuardKey = '';
-        */
+		/* Enable ExEngine DevGuard (must be enabled also in `exengine.php`)
+		$this->DevGuard = false;
+		$this->DevGuardKey = '';
+		*/
 
-        /* Set Application Default Locale, System default is 'en'
-        $this->DefaultLocale = 'en';
+		/* Set Application Default Locale, System default is 'en'
+		$this->DefaultLocale = 'en';
 		*/
 
 		/* You can enable rewrite rules support (not enabled by default)
@@ -43,7 +43,7 @@ class ApplicationConfig extends DefaultApplicationConfig {
 		ex. include_once ('lib/mylib/mylib.php');
 		*/
 
-    }
+	}
 }
 
 ?>
