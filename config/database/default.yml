@@ -2,16 +2,32 @@
 # You can create multiple database configuration files, just store in this directory, you can
 # use them in any controller by using `$this->loadDB`:
 #
-#   $this->loadDb(); // (this will load by default this config (`default.yml`) file)
+#   $this->loadDb(); // (this will load by default this config (`default.yml`) file or the default one set in the
+#	// configuration file.
 #   $this->loadDb("config_file"); // (this will load the `config_file.yml` file)
 #
-# Or in any DBO model by setting the `$DBC` reserved variable:
+# You can use it the old-fashion way (using directly ExEngine Database Manager) this way after loading the config:
+#
+#	$this->db->open(); // connects to the database
+#	$query_result = $this->db->query("MY SQL QUERY"); // perform a SQL query to the connected database.
+#	while ($row = $this->db->fetchArray($query_result)) {
+#		print_r($row);
+#	}
+#
+# You can use any embedded driver or EDBL drivers using the direct way.
+#
+# Or using the MVC-ExEngine DBO Class way, a DBO class is a reflection of a database table (or collection) metadata
+# that can be used to create, obtain, edit and delete (CRUD) in an object form avoiding using SQL querys or direct
+# interaction with the database.
+#
+# You can set the configuration file on each DBO Class by setting the $DBO property, if you don't set any, it will use
+# the default one.
 #
 #   ...
 #   var $DBC = 'config_file'; // (this will load the `config_file.yml` file)
 #   ...
 #
-# The supported types are:
+# The DBO supported database types are:
 #
 #   mysqli for MySQL, sqlite for SQLite and mongodb for MongoDB.
 #
@@ -19,8 +35,8 @@
 #
 # SQLite database are stored in safe_storage/sqlite, the system will create db if not existant, config example:
 #
-# type: "sqlite"
-# host: "mydb.sqlite"
+#	type: "sqlite"
+#	host: "mydb.sqlite"
 #
 # Internally MVC-ExEngine will use ExEngine Database Manager for MySQL and SQLite but not for MongoDB, so if you opt for
 # MongoDB you cannot use $this->loadDb() and its functions, you will be limited to the DBO Models (but that is not bad).
@@ -34,14 +50,19 @@
 #
 #   type: "mongodb"
 #   host: "mongodb://myuser:mypassword@myserverhost/myauthdatabase"
+#	db:   "default_db" - Optional, you can set a different DB for each DBO Class (MDB constant).		
 #
 # No auth database?
 #
 #   type: "mongodb"
 #   host: "mongodb://localhost"
+#	db:   "default_db" - Optional
 #
 # No default database?, set enabled to false and default database will not be checked at application init. (this param only
 # affects the default database, on any other configuration file will be ommited.
+#
+# And finally you can set the `check` parameter that will check the database availability each time the configuration file is
+# loaded, this is not recommended in production enviroments.
 
 check:    false
 type:     "mysqli"

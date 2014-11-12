@@ -2,7 +2,9 @@ MVC-ExEngine
 
 First steps to start a new MVC application
 
-0. Install ExEngine Framework (7.0.8.41+) in lib/exengine, cd there and do `git clone https://github.com/QOXCorp/exengine.git`.
+Recommendation: For a best performing MVC-ExEngine installation that you enable short_open_tags in your php.ini file.
+
+0. Install ExEngine Framework (7.0.8.42+) in lib/exengine, cd there and do `git clone https://github.com/QOXCorp/exengine.git`.
 1. Set Correctly the ExEngine paths in the config/exengine.php file (just the http_path is necessary almost all the times).
 2. Create a controller manually (in the app/controllers folder) or using mvctool:
 	- On Linux/OS X/Unix (bash-based):
@@ -11,4 +13,10 @@ First steps to start a new MVC application
 	- On Windows (PHP binary must be on the Path environment variable):
 		bin\mvc
 		mvctool -g controller start
+	- Or using the web interface:
+		bin\mvc
+		mvctool -wu
+		open the web interface at: http://localhost:8989/
 3. Test your installation, http://localhost/
+
+QOX Coporation - www.qox-corp.com

@@ -1,5 +1,5 @@
 MVC-ExEngine
-===========
+============
 
 These are only the files required to start an MVC project, the library files are not included here.
 MVC libraries are stored in eefx/lib/mvc-exengine in QOXCorp's ExEngine main project.
@@ -15,3 +15,5 @@ Install steps:
 4. Profit!.
 
 Read the README_1st file for more information about MVC-ExEngine and its tools.
+
+QOX Corporation - www.qox-corp.com
