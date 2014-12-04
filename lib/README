@@ -1,8 +1,12 @@
 Install Here ExEngine (7.0.8.41+)
 
-you can do it very quickly just writing in the console
+you can do it very quickly just writing in the console:
 
 git clone https://github.com/QOXCorp/exengine.git
+
+or if you are using Composer:
+
+create a folder named "exengine" and move "ee.composer.php" to "exengine/ee.php".
 
 Happy Coding! :)
 
