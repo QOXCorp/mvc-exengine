@@ -14,5 +14,4 @@
 #
 # Thats it :)
 
-- src: "bootstrap.min"
-- src: "navbar"
+- src: "main"
