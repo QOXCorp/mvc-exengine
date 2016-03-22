@@ -4,6 +4,10 @@ First steps to start a new MVC application
 
 Recommendation: For a best performing MVC-ExEngine installation that you enable short_open_tags in your php.ini file.
 
+Requirements:
+- Apache or PHP-FPM compatible web server.
+- PHP 5.4+
+
 0. Install ExEngine Framework (7.0.8.42+) in lib/exengine, cd there and do `git clone https://github.com/QOXCorp/exengine.git`.
 1. Set Correctly the ExEngine paths in the config/exengine.php file (just the http_path is necessary almost all the times).
 2. Create a controller manually (in the app/controllers folder) or using mvctool:
@@ -18,5 +22,13 @@ Recommendation: For a best performing MVC-ExEngine installation that you enable 
 		mvctool -wu
 		open the web interface at: http://localhost:8989/
 3. Test your installation, http://localhost/
+
+To enable pretty-url'ing:
+    - If using Apache2+:
+        Open your site configuration, usually in /etc/apache2/sites-enabled/000-default and set to allow overrides.
+        Remember to restart your server after configuration change.
+    - Open the MVC-ExEngine configuration file: config/eemvc.php and add this line inside ApplicationInit:
+        $this->RewriteRulesEnabled = true;
+    - All framework-based links will be converted to pretty urls.
 
 QOX Coporation - www.qox-corp.com

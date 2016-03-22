@@ -68,6 +68,6 @@ check:    false
 type:     "mysqli"
 host:     "localhost"
 user:     "root"
-passwd:   "root"
-db:       "mydatabaseschema"
+passwd:   "123456"
+db:       "ap"
 utf8mode: "true"

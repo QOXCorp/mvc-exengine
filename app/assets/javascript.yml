@@ -24,4 +24,9 @@
 #
 # Thats it :)
 
-- src: "main"
+- src: "//code.jquery.com/jquery-1.12.0.min.js"
+  remote: true
+- src: "//code.jquery.com/jquery-migrate-1.2.1.min.js"
+  remote: true
+- src: "bootstrap.min"
+- src: "ie10-viewport-bug-workaround"

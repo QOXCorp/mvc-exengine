@@ -17,5 +17,3 @@ new exengine(array("SpecialMode"=> "MVCOnly"));
 include_once(dirname(__FILE__).'/../config/eemvc.php');
 $mvctool = new ExEngine\MVC\Tool(new \ExEngine\MVC\ApplicationConfig());
 $mvctool->run();
-
-?>
