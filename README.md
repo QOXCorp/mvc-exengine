@@ -1,21 +1,21 @@
-MVC-ExEngine
-============
+ExEngine (MVC)
+==============
 
-These are only the files required to start an MVC project, the library files are not included here.
-MVC libraries are stored in eefx/lib/mvc-exengine in QOXCorp's ExEngine main project.
-
-You still need to clone ExEngine in order to use this files.
+These is the base structure for creating an MVC project using RAD framework "ExEngine".
+You still need to clone ExEngine (Core) in order to use this files.
 
 Install steps:
 
 ```
-git clone https://github.com/QOXCorp/mvc-exengine.git ./mymvcapp
-cd mymvcapp/lib/
+mkdir mymvcapp
+cd mymvcapp
+git clone https://github.com/QOXCorp/mvc-exengine.git .
+cd lib/
 git clone https://github.com/QOXCorp/exengine.git
 ```
 
-- Edit mymvcapp/config/exengine.php and set the "http_path" to your app's
-    external location.
+- Edit mymvcapp/config/exengine.php and adjust the "http_path" to
+    ExEngine Core library.
 - Profit!.
 
 Important
