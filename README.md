@@ -8,10 +8,14 @@ You still need to clone ExEngine in order to use this files.
 
 Install steps:
 
-- $ git clone https://github.com/QOXCorp/mvc-exengine.git ./mymvcapp
-- $ cd mymvcapp/lib/
-- $ git clone https://github.com/QOXCorp/exengine.git
+```
+git clone https://github.com/QOXCorp/mvc-exengine.git ./mymvcapp
+cd mymvcapp/lib/
+git clone https://github.com/QOXCorp/exengine.git
+```
 
+- Edit mymvcapp/config/exengine.php and set the "http_path" to your app's
+    external location.
 - Profit!.
 
 Important
